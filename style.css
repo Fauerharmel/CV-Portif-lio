@@ -35,7 +35,7 @@ main {
 h1 {
   color: #000000bd;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 1.5vw; /* Escala com a largura da viewport */
   opacity: 0.8;
 }
 
@@ -43,11 +43,13 @@ h2,
 p {
   color: #000000bd;
   font-weight: 500;
+  font-size: 1vw; /* Escala com a largura da viewport */
 }
 
 h3 {
   color: #000000bd;
   font-weight: 600;
+  font-size: 1vw; /* Escala com a largura da viewport */
 }
 
 /* Estilo do contêiner transparente */
@@ -64,9 +66,9 @@ h3 {
         rgba(255, 255, 255, 0.3)
     );
     border-radius: 2rem;
-    z-index: 2;
     backdrop-filter: blur(2rem);
     display: flex;
+    z-index: 2;
 }
 
 /* Estilos do menu */
@@ -89,11 +91,13 @@ h3 {
     flex: 1;
     position: relative;
     top: 20px;
+    margin: 2rem 5rem;
+    padding: 1rem 5rem;
 }
 
 .user img {
-    width: 30px;
-    height: 30px;
+    width: 4vw; /* Escala com a largura da viewport */
+    height: 4vw; /* Escala com a largura da viewport */
 }
 
 /* Estilos principais */
@@ -107,13 +111,15 @@ h3 {
 /* Estilos do cartão */
 .card {
   display: flex;
+  flex-direction: column;
+  width: 40vw;
   background: linear-gradient(
       to left top,
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.5)
   );
   border-radius: 1rem;
-  margin: 2rem 0rem;
+  margin: 2rem 5rem;
   padding: 2rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
@@ -121,10 +127,12 @@ h3 {
   align-items: center;
 }
 
+
 /* Estilos dos links */
 .link {
     display: flex;
-    margin: 2rem 0rem;
+    flex: 1;
+    margin: 2rem 5rem;
     padding: 1rem 5rem;
     align-items: center;
     justify-items: center;
@@ -133,7 +141,7 @@ h3 {
 
 .link h2 {
     padding: 0rem 2rem;
-    font-size: 10px;
+    font-size: 1vw; /* Escala com a largura da viewport */
 }
 
 /* Estilos do componente welcome */
@@ -160,24 +168,25 @@ h3 {
     width: 60%;
     color: #000000bd;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 1vw; /* Escala com a largura da viewport */
 }
 
 /* Estilos do formulário de contato */
-#contato form {
+ #contato form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contato label {
+ #contato label {
     margin: 10px;
     align-items: center;
+    font-size: 1vw;
 }
 
-#contato input,
+#contato input, 
 #contato textarea {
-    width: 32vw;
+    width: 38vw;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -188,18 +197,20 @@ h3 {
 #contato input[type="submit"] {
     background-color: #333;
     color: #fff;
+    display: flex;
+    width: 100%;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
+    font-size: 1vw;
 }
 
 #contato input[type="submit"]:hover {
     background-color: #444;
     align-items: center;
-}
-
+}  
 /* Estilos dos círculos decorativos */
 .circle1,
 .circle2 {
